@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Proxima-rg';
+    src: url('../fonts/ProximaNova/ProximaNova-Regular.eot');
+    src: url('../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova/ProximaNova-Regular.woff') format('woff'),
+        url('../fonts/ProximaNova/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima-bold';
+    src: url('../fonts/ProximaNova/ProximaNova-Bold.eot');
+    src: url('../fonts/ProximaNova/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova/ProximaNova-Bold.woff') format('woff'),
+        url('../fonts/ProximaNova/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller-bold';
+    src: url('../fonts/Muller/MullerBold.eot');
+    src: url('../fonts/Muller/MullerBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Muller/MullerBold.woff') format('woff'),
+        url('../fonts/Muller/MullerBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Muller-medium';
+    src: url('../fonts/Muller/MullerMedium.eot');
+    src: url('../fonts/Muller/MullerMedium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Muller/MullerMedium.woff') format('woff'),
+        url('../fonts/Muller/MullerMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@mixin muller-med {
+    font-family: "Muller-medium", sans-serif;
+    font-weight: 400;
+}
+@mixin muller-bold {
+    font-family: "Muller-bold", sans-serif;
+    font-weight: 700;
+}
+@mixin proxima-rg {
+    font-family: "Proxima-rg", sans-serif;
+    font-weight: 400;
+}
+@mixin proxima-bold {
+    font-family: "Proxima-bold", sans-serif;
+    font-weight: 700;
+}
