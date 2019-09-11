@@ -1,0 +1,42 @@
+.about
+  color: $color-text
+  background: #000 url('../img/about/about-bg.jpg') no-repeat center center
+  background-size: cover
+  &__title
+    +title
+    +proxima-bold
+    margin-bottom: 79px
+  &__text
+    margin-bottom: 85px
+  &__picture
+    margin: auto
+    margin-bottom: 30px
+    +text-proxima
+    text-align: center
+    max-width: 843px
+    &:last-of-type
+      margin-bottom: 0
+.statistics
+    display: flex
+    justify-content: space-between
+    &__text
+      display: flex
+      flex-direction: column
+      flex-basis: 25%
+      text-align: center
+      justify-content: flex-start
+    &__number
+      font-size: 48px
+      +proxima-bold
+      margin-bottom: 29px
+    &__signature
+      max-width: 154px
+      margin: 0 auto
+      +text-proxima
+@media (max-width: 992px)
+  .statistics
+    flex-wrap: wrap
+    &__text
+      flex-basis: 50%
+      margin-bottom: 50px
+      

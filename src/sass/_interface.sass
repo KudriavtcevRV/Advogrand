@@ -1,3 +1,36 @@
+@mixin button
+  border: none
+  border-radius: 5px
+  color: $color-text
+@mixin title 
+  font-size: 30px
+  text-align: center
+@mixin text-proxima
+  font-size: 16px
+  +proxima-rg
+  line-height: 22px
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
 .container
   width: 940px
   margin: auto
+.phone
+  +proxima-bold
+  color: $color-bold
+ul 
+  list-style: none
+  padding-left: 0
+a 
+  text-decoration: none
+button 
+  +button
+.section
+  padding-top: 100px
+img
+  max-width: 100%
+@media (max-width: 992px)
+  .container
+    max-width: 900px
+    width: 90%
