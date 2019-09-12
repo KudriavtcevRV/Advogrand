@@ -2,6 +2,7 @@
   color: $color-text
   background: #000 url('../img/about/about-bg.jpg') no-repeat center center
   background-size: cover
+  +padding
   &__title
     +title
     +proxima-bold
@@ -39,4 +40,23 @@
     &__text
       flex-basis: 50%
       margin-bottom: 50px
-      
+@media (max-width: 576px)
+  .about
+    &__title
+      +mobil-title
+      margin-bottom: 50px
+    &__text
+      margin-bottom: 50px
+    &__picture
+      +text-proxima-mob
+  .statistics
+    &__text
+      flex-basis: 100%
+      &:last-child
+        margin-bottom: 0
+    &__number
+      font-size: 40px
+      margin-bottom: 10px
+    &__signature
+      font-size: 14px
+      max-width: 140px

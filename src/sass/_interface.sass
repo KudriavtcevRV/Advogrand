@@ -5,10 +5,19 @@
 @mixin title 
   font-size: 30px
   text-align: center
+@mixin mobil-title
+  font-size: 23px
+  text-align: center
 @mixin text-proxima
   font-size: 16px
   +proxima-rg
   line-height: 22px
+@mixin padding
+  padding-bottom: 90px
+@mixin text-proxima-mob
+  font-size: 14px
+  +proxima-rg
+  line-height: 20px
 *
   margin: 0
   padding: 0
@@ -34,3 +43,5 @@ img
   .container
     max-width: 900px
     width: 90%
+  .section
+    padding: 80px 0

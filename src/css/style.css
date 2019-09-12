@@ -75,6 +75,9 @@ img {
     max-width: 900px;
     width: 90%;
   }
+  .section {
+    padding: 80px 0;
+  }
 }
 
 .navbar {
@@ -123,6 +126,10 @@ img {
 
 .navbar__phone {
   font-size: 14px;
+}
+
+.header-logo img {
+  display: block;
 }
 
 .header-info {
@@ -180,6 +187,25 @@ img {
   }
 }
 
+@media (max-width: 768px) {
+  .header__text {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar__button {
+    font-size: 10px;
+    padding: 10px 18px;
+  }
+  .header-logo {
+    width: 130px;
+  }
+  .header__phone {
+    font-size: 15px;
+  }
+}
+
 .hero {
   padding: 125px 0;
   background: #000 url("../img/hero/hero-bg.jpg") no-repeat center center;
@@ -219,6 +245,27 @@ img {
   font-size: 18px;
   background-color: #c91111;
   font-family: "Proxima-bold", sans-serif;
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 80px 0;
+  }
+  .hero__overtitle {
+    font-size: 20px;
+  }
+  .hero__title {
+    font-size: 27px;
+  }
+  .hero__subtitle {
+    text-align: center;
+    font-size: 18px;
+  }
+  .hero__button {
+    font-size: 17px;
+    padding: 20px 0;
+    width: 100%;
+  }
 }
 
 .services__title {
@@ -295,10 +342,32 @@ img {
   }
 }
 
+@media (max-width: 576px) {
+  .services__title {
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .services-list__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 35px;
+  }
+  .services-list__item:last-child {
+    margin-bottom: 0;
+  }
+  .services-list__text {
+    font-size: 14px;
+    font-family: "Proxima-rg", sans-serif;
+    line-height: 20px;
+  }
+}
+
 .about {
   color: #ffffff;
   background: #000 url("../img/about/about-bg.jpg") no-repeat center center;
   background-size: cover;
+  padding-bottom: 90px;
 }
 
 .about__title {
@@ -375,5 +444,140 @@ img {
         flex-basis: 50%;
     margin-bottom: 50px;
   }
+}
+
+@media (max-width: 576px) {
+  .about__title {
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .about__text {
+    margin-bottom: 50px;
+  }
+  .about__picture {
+    font-size: 14px;
+    font-family: "Proxima-rg", sans-serif;
+    line-height: 20px;
+  }
+  .statistics__text {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .statistics__text:last-child {
+    margin-bottom: 0;
+  }
+  .statistics__number {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .statistics__signature {
+    font-size: 14px;
+    max-width: 140px;
+  }
+}
+
+.offer {
+  background-color: #f5f5f5;
+  padding-bottom: 90px;
+}
+
+.offer__title {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 96px;
+}
+
+.offer-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.offer-service__text {
+  display: block;
+  max-width: 263px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Proxima-rg", sans-serif;
+  line-height: 22px;
+  color: #1c1c1c;
+}
+
+.offer-service__text_bold {
+  font-family: "Proxima-bold", sans-serif;
+}
+
+.offer-service__img {
+  text-align: center;
+  margin-bottom: 54px;
+}
+
+@media (max-width: 992px) {
+  .offer-service {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  .offer-services {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .offer-service__text {
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .offer-service__text_bold {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer-services {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .offer__title {
+    margin-bottom: 50px;
+    font-size: 23px;
+    text-align: center;
+  }
+  .offer-service__text {
+    font-size: 14px;
+    font-family: "Proxima-rg", sans-serif;
+    line-height: 20px;
+  }
+}
+
+.advantage {
+  padding-bottom: 90px;
+}
+
+.advantage__title {
+  font-size: 30px;
+  text-align: center;
+  font-family: "Proxima-bold", sans-serif;
+  margin-bottom: 80px;
+}
+
+.advantage-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 /*# sourceMappingURL=style.css.map */
