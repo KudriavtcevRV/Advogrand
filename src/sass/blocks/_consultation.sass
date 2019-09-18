@@ -1,0 +1,78 @@
+.consultation
+  background: url('../img/consultation/bg-consultation.jpg') no-repeat center center
+  background-size: cover
+  +padding
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    color: $color-text
+  &-img
+    &__link
+      margin-bottom: 30px
+  &__title
+    +title
+    text-align: left
+    max-width: 466px
+    font-size: 30px
+    +muller-bold
+    margin-bottom: 78px
+  &-list
+    &__item
+      display: flex
+      align-items: flex-start
+      margin-bottom: 25px
+      +muller-med
+      font-size: 18px
+    &__number
+      display: inline-block
+      margin-right: 20px
+      color: $color-icon
+    &__text
+      display: inline-block
+      max-width: 500px
+    &__link
+      color: $color-text
+      border-bottom: 2px solid $color-text
+@media (max-width: 992px)
+  .consultation
+    &-block
+      flex-direction: column
+    &__title
+      margin: auto
+      margin-bottom: 78px
+    &__wrap
+      margin-bottom: 30px
+    &-img
+      display: flex
+      &__link
+        margin-bottom: 0
+        margin-right: 30px
+        &:last-child
+          margin-right: 0
+@media (max-width: 768px)
+  .consultation
+    &-list
+      &__number
+        line-height: 30px
+      &__text
+        width: 350px
+        line-height: 30px
+@media (max-width: 576px)
+  .consultation
+    &__title
+      +mobil-title
+      margin-bottom: 50px
+    &-list
+      max-width: 290px
+      margin: auto
+      &__item
+        font-size: 16px
+    &-img
+      flex-direction: column
+      &__link
+        margin-right: 0
+        margin-bottom: 15px
+        &:last-child
+          margin-bottom: 0
+

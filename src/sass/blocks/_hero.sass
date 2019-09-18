@@ -26,20 +26,27 @@
     padding: 25px 46px
     font-size: 18px
     background-color: $primery-color
+    background-image: linear-gradient(to top, #c11717 0%, #e42626 100%)
     +proxima-bold
+    &:hover
+        box-shadow: 0 0 10px $primery-color
 @media (max-width: 576px)
   .hero
     padding: 80px 0
     &__overtitle
       font-size: 20px
+      text-align: center
     &__title
       font-size: 27px
+      text-align: center
     &__subtitle
+      margin: 0 auto 55px
       text-align: center
       font-size: 18px
     &__button
-      font-size: 17px
-      padding: 20px 0
-      width: 100%
+      display: block
+      font-size: 16px
+      padding: 20px 35px
+      margin: auto
 
 

@@ -4,10 +4,11 @@
   &__title
     +title
     margin-bottom: 96px
+    +proxima-bold
   &-service
     &s
       display: flex
-      justify-content: space-between
+      justify-content: space-around
     &__text
       display: block
       max-width: 263px
@@ -22,9 +23,6 @@
 @media (max-width: 992px)
   .offer
     &-service
-      flex-basis: 50%
-      margin: auto
-      text-align: center
       &s
         flex-wrap: wrap
       &__text
@@ -32,17 +30,23 @@
         margin-bottom: 50px
         &_bold
           margin-bottom: 0
+    &__service
+      flex-basis: 50%
+      margin: auto
+      text-align: center
 @media (max-width: 768px)
   .offer
     &-service
       &s
-        flex-direction: column
+        flex-direction: colum
 @media (max-width: 576px)
   .offer
     &__title
       margin-bottom: 50px
       +mobil-title
     &-service
+      &s
+        flex-direction: column
       &__text
-        +text-proxima-mob
+        font-size: 14px
       
